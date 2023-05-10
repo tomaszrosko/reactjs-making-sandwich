@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Sausage",
+    "cost": 800
+  },
+  {
+    "name": "Salami",
+    "cost": 0
+  },
+  {
+    "name": "Bacon",
+    "cost": 600
+  },
+  {
+    "name": "Cheese",
+    "cost": 400
+  },
+  {
+    "name": "Chilli",
+    "cost": 100
+  },
+  {
+    "name": "Cucumber",
+    "cost": 200
+  },
+  {
+    "name": "Eggs",
+    "cost": 100
+  },
+  {
+    "name": "Iceberg-lettuce",
+    "cost": 150
+  },
+  {
+    "name": "Pepper",
+    "cost": 100
+  },
+  {
+    "name": "Red-onion",
+    "cost": 50
+  },
+  {
+    "name": "Tomato",
+    "cost": 250
+  },
+  {
+    "name": "Yellow-onion",
+    "cost": 50
+  }
+]
