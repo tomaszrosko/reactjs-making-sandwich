@@ -40,18 +40,26 @@ function Make(props) {
     const addProduct = () => {
         let size = 'Średnia';
         if (baza === 400) {
-            size = "Mała kanapka"
+            size = "Mała"
         } else if (baza === 600 ) {
-            size = "Średnia kanapka"
+            size = "Średnia"
         } else {
-            size = "Duża kanapka"
+            size = "Duża"
         }
-      let sandwich = {size : size, cost: cost, dodatki: []}
+      let sandwich = {size : size, cost: cost, accessories: []}
         accessories.forEach(accessor => {
-            if (accessor.checked) sandwich.dodatki.push(accessor);
+            if (accessor.checked) sandwich.accessories.push(accessor);
         })
         props.getSandwich(sandwich);
+        resetSandwich();
     }
+    const resetSandwich = () => {
+        accessories.forEach(accessor => {
+            accessor.cost === 0 ? accessor.checked = true : accessor.checked = false;
+        })
+        setBaza(600);
+    }
+
 
     return (
         <div className="make">

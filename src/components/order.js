@@ -19,7 +19,11 @@ function Order(props) {
             <h2>Złóż zamówienie</h2>{order.map((sandwich, index) => {
             return (
                 <div key={index}>
-                    <h3>{index + 1}: {sandwich.size}</h3>
+                    <h3>{index + 1}: {sandwich.size} kanapka
+                        (ilość dodatków: {sandwich.accessories.length})
+                        &nbsp; | &nbsp;
+                        {(sandwich.cost / 100).toFixed(2)}zł
+                    </h3>
                 </div>
             )
         })}<p>----------</p>
