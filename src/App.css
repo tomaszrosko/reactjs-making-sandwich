@@ -567,3 +567,14 @@ li.category img {
 .woocommerce-variation-price {
     border-top: none;
 }
+.row-order {
+  display: flex;
+  align-items: center;
+}
+.btn-order {
+  margin-left: 20px;
+  padding: 2px 4px;
+  border: 1px solid black;
+  font-size: 10px;
+  line-height: 10px;
+}
