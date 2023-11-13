@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Make from "./components/make";
 import Order from "./components/order";
 import {BrowserRouter, Route} from "react-router-dom";
@@ -25,7 +25,7 @@ function App() {
   return (
    <div className='App'>
      <header className="header">
-         <h1>Zrób kanapkę</h1>
+        <Cart />
      </header>
        <div className='content'>
            <Make getSandwich={getSandwich} />
