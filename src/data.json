@@ -1,50 +1,74 @@
 [
   {
-    "name": "Sausage",
-    "cost": 800
+    "name": "sausage",
+    "cost": 800,
+    "width": 137,
+    "height":60
   },
   {
-    "name": "Salami",
-    "cost": 0
+    "name": "salami",
+    "cost": 0,
+    "width": 53,
+    "height":60
   },
   {
-    "name": "Bacon",
-    "cost": 600
+    "name": "bacon",
+    "cost": 600,
+    "width": 92,
+    "height":60
   },
   {
-    "name": "Cheese",
-    "cost": 400
+    "name": "cheese",
+    "cost": 400,
+    "width": 60,
+    "height":60
   },
   {
-    "name": "Chilli",
-    "cost": 100
+    "name": "chilli",
+    "cost": 100,
+    "width": 94,
+    "height":60
   },
   {
-    "name": "Cucumber",
-    "cost": 200
+    "name": "cucumber",
+    "cost": 200,
+    "width": 111,
+    "height":60
   },
   {
-    "name": "Eggs",
-    "cost": 100
+    "name": "eggs",
+    "cost": 100,
+    "width": 108,
+    "height":60
   },
   {
-    "name": "Iceberg-lettuce",
-    "cost": 150
+    "name": "iceberg-lettuce",
+    "cost": 150,
+    "width": 77,
+    "height":60
   },
   {
-    "name": "Pepper",
-    "cost": 100
+    "name": "pepper",
+    "cost": 100,
+    "width": 44,
+    "height":60
   },
   {
-    "name": "Red-onion",
-    "cost": 50
+    "name": "red-onion",
+    "cost": 50,
+    "width": 75,
+    "height":60
   },
   {
-    "name": "Tomato",
-    "cost": 250
+    "name": "tomato",
+    "cost": 250,
+    "width": 87,
+    "height":60
   },
   {
-    "name": "Yellow-onion",
-    "cost": 50
+    "name": "yellow-onion",
+    "cost": 50,
+    "width": 89,
+    "height":60
   }
 ]

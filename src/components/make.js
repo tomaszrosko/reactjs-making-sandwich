@@ -63,9 +63,9 @@ function Make(props) {
 
     return (
         <div className="make">
-            <h2>Zrób kanapkę</h2>
-            <h3>Cena: {(cost / 100).toFixed(2)}zł</h3>
-            <div>
+            <h2 className={"title"}>Zrób kanapkę</h2>
+            <div className={"summary"}>Cena kanapki: {(cost / 100).toFixed(2)}zł</div>
+            <div className={"roll"}>
                 <img className={"size size-small " + (baza === 400 ? "changed" : '')} onClick={() => changeSize(400)} src={process.env.PUBLIC_URL + "/assents/img/" + "small" + ".png"}
                     alt="size"/>
                 <img className={"size size-medium " + (baza === 600 ? "changed" : '')} onClick={() => changeSize(600)}
@@ -73,19 +73,25 @@ function Make(props) {
                 <img
                 className={"size size-big " + (baza === 800 ? "changed" : '')} onClick={() => changeSize(800)} src={process.env.PUBLIC_URL + "/assents/img/" + "big" + ".png"} alt="size"/>
             </div>
-            <button onClick={() => addProduct()}>Dodaj</button>
+          <div className={"box-btn"}>
+            <button className={"btn-add"} onClick={() => addProduct()}>Dodaj</button>
+          </div>
+
             <div className="accessories">
                 {accessories.map((accessories, index) => {
                     return (
                         <div key={index} className="accessories__box">
                             <input type="checkbox" checked={accessories.checked}
-                                onChange={() => accessorChange(accessories)}/> <img className={"accessories__img"}
-                            src={process.env.PUBLIC_URL + "/assents/img/" + accessories.name + ".png"}
-                            alt={accessories.name}/>
-                            <p>{accessories.name}</p>{accessories.cost === 0 ? <p>darmo</p> :
+                                onChange={() => accessorChange(accessories)}/>
+                          <div className={"accessories__box--content"}>
+                            <img className={"accessories__img"}
+                                 src={process.env.PUBLIC_URL + "/assents/img/" + accessories.name + ".png"}
+                                 title={accessories.name} alt={accessories.name} width={accessories.width} height={accessories.height}/>
+                            <p>{accessories.name}</p>
+                          </div>
+                          {accessories.cost === 0 ? <p>darmo</p> :
                             <p>{(accessories.cost / 100).toFixed(2)}zł</p>}
                         </div>
-
                     )
                 })}
             </div>
